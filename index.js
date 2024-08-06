@@ -5,12 +5,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     Telegram.WebApp.enableVerticalSwipes();
 });
 
-// Предотвращаем зум на iOS при двойном тапе
-let lastTouchEnd = 0;
-document.addEventListener('touchend', function(event) {
-  let now = (new Date()).getTime();
-  if (now - lastTouchEnd <= 300) {
+
+// Предотвращает масштабирование через жесты на устройствах с сенсорным экраном
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
+
+// Запрещает изменение масштаба через жесты pinch (щипок)
+document.addEventListener('touchmove', function (event) {
+  if (event.scale !== 1) {
     event.preventDefault();
   }
-  lastTouchEnd = now;
-}, false);
+}, { passive: false });
