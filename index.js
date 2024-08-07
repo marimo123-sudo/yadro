@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     Telegram.WebApp.setHeaderColor('#000000');
     Telegram.WebApp.disableClosingConfirmation();
     Telegram.WebApp.enableVerticalSwipes();
+    Telegram.WebApp.mainButton.show();
+    Telegram.WebApp.mainButton.onClick(function() {
+        console.log('Back button was clicked');
+        window.location.href = 'registration/reg.html';
+  });
 });
 
 
@@ -42,3 +47,5 @@ document.addEventListener('touchstart', function(event) {
 document.addEventListener('gesturestart', function(event) {
     event.preventDefault();
 });
+
+
