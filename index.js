@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     Telegram.WebApp.setHeaderColor('#000000');
     Telegram.WebApp.disableClosingConfirmation();
     Telegram.WebApp.enableVerticalSwipes();
-    Telegram.WebApp.mainButton.show();
-    Telegram.WebApp.mainButton.onClick(function() {
+    Telegram.WebApp.MainButton.isVisible = true;
+    Telegram.WebApp.MainButton.onClick(function() {
         console.log('Back button was clicked');
         window.location.href = 'registration/reg.html';
   });
