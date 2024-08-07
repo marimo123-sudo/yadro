@@ -13,5 +13,5 @@ html {
 
 .center {
     position: absolute;
-    top: 50vh;
+    top: calc(var(--tg-viewport-height) / 2);
 }
