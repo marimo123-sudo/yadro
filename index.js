@@ -24,4 +24,9 @@ go_btn.addEventListener('click', function() {
     question.style.display = 'none';
     hi_free.classList.add('visible')
 });
-    
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    Telegram.WebApp.setHeaderColor('#000000');
+    Telegram.WebApp.setBackgroundColor('#000000')
+});
