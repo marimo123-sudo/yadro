@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Скрыть ползунки */
 }
 
 .back {
@@ -15,13 +16,27 @@ html, body {
   width: 100%;
   height: 84.2vh;
   background: #1a1a1a;
-  border-radius: 6vw;
+  border-bottom-left-radius: 6vw;
+  border-bottom-right-radius: 6vw;
 }
 
 .img {
   width: 100%;
   height: 62.5vh;
   position: absolute;
+}
+
+#images {
+  position: relative;
+  transition: transform 0.5s ease-in-out; /* Плавная анимация перемещения */
+}
+
+#images.move-up {
+  transform: translateY(-23vh); /* Перемещение элемента наверх */
+}
+
+#images.move-up2 {
+  transform: translateY(-100vh); /* Перемещение элемента наверх */
 }
 
 .ton_work_text {
@@ -77,4 +92,173 @@ html, body {
   font-family: Inter;
   font-size: 2.5vh;
   font-weight: 700;
+}
+
+.center {
+  position: absolute;
+  width: 100%;
+  top: 44vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register_text {
+  position: absolute;
+  width: 80vw;
+  height: 10vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vh;
+  line-height: 0vh;
+  text-align: center;
+  color: #ffffff;
+}
+
+#reg {
+  transition: opacity 0.5s; 
+  transition: transform 0.5s ease-in-out; /* Плавная анимация перемещения */
+  position: relative;
+}
+
+#question {
+  transition: opacity 0.5s;
+}
+
+.register {
+  visibility: hidden;
+}
+
+.register.move-up2 {
+  transform: translateY(-30vh);
+}
+
+.register.visible {
+  visibility: visible;
+}
+
+.name, .email, .direction {
+  position: absolute;
+  top: 6vh;
+  width: 80vw;
+  height: 4.5vh;
+  border-radius: 1.7vh;
+  padding-left: 4vw;
+  background-color: transparent;
+  border: 0.1vh solid #3c3c3c;
+  font-size: 2vh;
+  font-weight: 700;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  color: #ffffff;
+}
+
+.name:focus, .email:focus, .about_you:focus {
+  border-color: #ffffff; /* Измените цвет границы при фокусе */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Добавьте тень при фокусе */
+  outline: none;
+}
+
+.email {
+  top: 14vh;
+}
+
+.do_yo_want {
+  position: absolute;
+  width: 69vw;
+  height: 40px;
+  left: 6.8vw;
+  top: 68vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4vh;
+  line-height: 2.5vh;
+  text-align: left;
+  color: #a2a2a2;
+}
+
+.go_btn {
+  position: absolute;
+  width: 16vw;
+  height: 5vh;
+  background: transparent;
+  border: 0.1vh solid #ffffff;
+  border-radius: 1vh;
+  top: 68vh;
+  left: 76vw;
+  color: #ffffff;
+}
+
+.go_text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4vh;
+}
+
+.hi_free {
+  position: relative;
+  left: 6.8vw;
+  width: 80vw;
+  display: none;
+  top: 68vh;
+}
+
+textarea {
+  resize: none; /* Запрещает изменение размера */
+  overflow: auto; /* Добавляет прокрутку, если текст выходит за пределы поля */
+}
+
+.hi_free.visible {
+  display: block;
+}
+
+.hi_free_text {
+  position: absolute;
+  font-style: normal;
+  color: #a2a2a2;
+  width: 80vw;
+  font-family: Inter;
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+
+.about_you {
+  position: absolute;
+  padding-left: 3.5vw;
+  padding-top: 1vh;
+  width: 82vw;
+  height: 17vh;
+  font-size: 2vh;
+  font-weight: 700;
+  top: 4.5vh;
+  color: #ffffff;
+  background-color: transparent;
+  border: 0.1vh solid #3c3c3c;
+  border-radius: 1.7vh;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.hint1, .hint2 {
+  position: absolute;
+  width: 80vw;
+  height: 40px;
+  top: 23.8vh;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4vh;
+  line-height: 2.5vh;
+  text-align: left;
+  color: #a2a2a2;
+}
+
+.direction {
+  top: 30vh;
+}
+
+.hint2 {
+  top: 35.7vh;
 }
