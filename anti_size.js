@@ -9,18 +9,17 @@
       event.preventDefault();
     }
   }, { passive: false });
+  // function updateObjectPositions() {
+  //     var viewport_height = Telegram.WebApp.viewportHeight;
+  //     console.log(viewport_height);
+  // }
   
-  function updateObjectPositions() {
-      var viewport_height = Telegram.WebApp.viewportHeight;
-      console.log(viewport_height);
-  }
-  
-  window.addEventListener('resize', updateObjectPositions);
+  // window.addEventListener('resize', updateObjectPositions);
 
 
-  document.addEventListener('touchmove', function(event) {
-    event.preventDefault();
-}, { passive: false });
+//   document.addEventListener('touchmove', function(event) {
+//     event.preventDefault();
+// }, { passive: false });
 
 // document.addEventListener('touchstart', function(event) {
 //     if (event.touches.length > 1) {
@@ -28,6 +27,6 @@
 //     }
 // }, { passive: false });
 
-document.addEventListener('gesturestart', function(event) {
-    event.preventDefault();
-});
+// document.addEventListener('gesturestart', function(event) {
+//     event.preventDefault();
+// });
