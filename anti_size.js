@@ -1,7 +1,7 @@
 // Предотвращает масштабирование через жесты на устройствах с сенсорным экраном
-document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
-  });
+// document.addEventListener('gesturestart', function (e) {
+//     e.preventDefault();
+//   });
   
   // Запрещает изменение масштаба через жесты pinch (щипок)
   document.addEventListener('touchmove', function (event) {
@@ -22,11 +22,11 @@ document.addEventListener('gesturestart', function (e) {
     event.preventDefault();
 }, { passive: false });
 
-document.addEventListener('touchstart', function(event) {
-    if (event.touches.length > 1) {
-        event.preventDefault();
-    }
-}, { passive: false });
+// document.addEventListener('touchstart', function(event) {
+//     if (event.touches.length > 1) {
+//         event.preventDefault();
+//     }
+// }, { passive: false });
 
 document.addEventListener('gesturestart', function(event) {
     event.preventDefault();
