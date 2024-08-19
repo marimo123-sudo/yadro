@@ -77,3 +77,18 @@ function focusNextInput(event) {
 document.querySelectorAll('input, textarea').forEach(input => {
     input.addEventListener('keydown', focusNextInput);
 });
+
+// Добавляем обработчик события для каждого input и textarea
+document.querySelectorAll('input, textarea').forEach(input => {
+    input.addEventListener('keydown', focusNextInput);
+});
+
+// Функция для скрытия клавиатуры при касании за пределами полей ввода
+function hideKeyboard(event) {
+    if (!event.target.closest('input') && !event.target.closest('textarea')) {
+        document.activeElement.blur();
+    }
+}
+
+// Добавляем обработчик события touchstart на элемент body
+document.body.addEventListener('touchstart', hideKeyboard);
