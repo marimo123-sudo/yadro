@@ -17,6 +17,9 @@ contin.addEventListener('click', function() {
         register.classList.add("visible"); //делаем объект регитсрации видимым
         count = count + 1;
     }
+    else if (count == 1) {
+        window.location.href = "main/main.html";
+    }
 });
 
 
@@ -47,20 +50,6 @@ if (isMobile()) {
 } else {
     console.log('На ПК');
 }
-
-const inputElements = document.querySelectorAll('input, textarea');
-inputElements.forEach(input => {
-    input.addEventListener('focus', () => {
-        console.log('Input focused');
-        background.classList.add("upper");
-    });
-
-    input.addEventListener('blur', () => {
-        console.log('Input blurred');
-        background.classList.remove("upper");
-    });
-});
-
 
 function focusNextInput(event) {
     if (event.key === 'Enter') {
