@@ -31,19 +31,3 @@
 //     event.preventDefault();
 // });
 
-// anti_size.js
-function adjustElementsForKeyboard() {
-  const imagesElement = document.getElementById('images');
-  const registerElement = document.getElementById('reg');
-
-  if (window.innerHeight < 600) { // условное значение, которое нужно адаптировать под ваши нужды
-      imagesElement.classList.add('move-up');
-      registerElement.classList.add('move-up2');
-  } else {
-      imagesElement.classList.remove('move-up');
-      registerElement.classList.remove('move-up2');
-  }
-}
-
-window.addEventListener('resize', adjustElementsForKeyboard);
-window.addEventListener('load', adjustElementsForKeyboard);
