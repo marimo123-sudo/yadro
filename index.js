@@ -60,3 +60,20 @@ inputElements.forEach(input => {
         background.classList.remove("upper");
     });
 });
+
+
+function focusNextInput(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Предотвращаем стандартное действие Enter
+        let inputs = Array.from(document.querySelectorAll('input, textarea'));
+        let currentIndex = inputs.indexOf(event.target);
+        if (currentIndex !== -1 && currentIndex < inputs.length - 1) {
+            inputs[currentIndex + 1].focus();
+        }
+    }
+}
+
+// Добавляем обработчик события для каждого input и textarea
+document.querySelectorAll('input, textarea').forEach(input => {
+    input.addEventListener('keydown', focusNextInput);
+});
