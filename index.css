@@ -7,14 +7,14 @@ html, body {
 .back {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: #000000;
 }
 
 .first_square {
   position: relative;
   width: 100%;
-  height: 84.2vh;
+  height: 84.2dvh;
   background: #1a1a1a;
   border-bottom-left-radius: 6vw;
   border-bottom-right-radius: 6vw;
@@ -22,7 +22,7 @@ html, body {
 
 .img {
   width: 100%;
-  height: 62.5vh;
+  height: 62.5dvh;
   position: absolute;
 }
 
@@ -32,52 +32,52 @@ html, body {
 }
 
 #images.move-up {
-  transform: translateY(-23vh); /* Перемещение элемента наверх */
+  transform: translateY(-23dvh); /* Перемещение элемента наверх */
 }
 
 #images.move-up2 {
-  transform: translateY(-100vh); /* Перемещение элемента наверх */
+  transform: translateY(-100dvh); /* Перемещение элемента наверх */
 }
 
 .ton_work_text {
   position: absolute;
   width: 80vw;
-  height: 6vh;
+  height: 6dvh;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
-  font-size: 6.2vh;
+  font-size: 6.2dvh;
   text-align: left;
   color: #ffffff;
   left: 4.8vw;
-  top: 64vh;
+  top: 64dvh;
 
 }
 
 .description {
   position: absolute;
   width: 76.5vw;
-  height: 7.4vh;
+  height: 7.4dvh;
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  font-size: 2vh;
+  font-size: 2dvh;
   text-align: left;
-  line-height: 3.3vh;
+  line-height: 3.3dvh;
   color: #a2a2a2;
-  top: 72vh;
+  top: 72dvh;
   left: 4.8vw;
 }
 
 .btn {
   position: absolute;
-  bottom: 0vh;
+  bottom: 0dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 13vh;
+  height: 13dvh;
   border-top-left-radius: 6vw;
   border-top-right-radius: 6vw;
   border: #1a1a1a;
@@ -86,18 +86,18 @@ html, body {
 
 .text {
   position: absolute;
-  top: 5vh;
+  top: 5dvh;
   font-style: normal;
   color: #ffffff;
   font-family: Inter;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   font-weight: 700;
 }
 
 .center {
   position: absolute;
   width: 100%;
-  top: 44vh;
+  top: 44dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,12 +107,12 @@ html, body {
 .register_text {
   position: absolute;
   width: 80vw;
-  height: 10vh;
+  height: 10dvh;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
-  font-size: 4vh;
-  line-height: 0vh;
+  font-size: 4dvh;
+  line-height: 0dvh;
   text-align: center;
   color: #ffffff;
 }
@@ -132,7 +132,7 @@ html, body {
 }
 
 .register.move-up2 {
-  transform: translateY(-30vh);
+  transform: translateY(-30dvh);
 }
 
 .register.visible {
@@ -141,14 +141,14 @@ html, body {
 
 .name, .email, .direction {
   position: absolute;
-  top: 6vh;
+  top: 6dvh;
   width: 80vw;
-  height: 4.5vh;
-  border-radius: 1.7vh;
+  height: 4.5dvh;
+  border-radius: 1.7dvh;
   padding-left: 4vw;
   background-color: transparent;
-  border: 0.1vh solid #3c3c3c;
-  font-size: 2vh;
+  border: 0.1dvh solid #3c3c3c;
+  font-size: 2dvh;
   font-weight: 700;
   transition: border-color 0.3s, box-shadow 0.3s;
   color: #ffffff;
@@ -161,7 +161,7 @@ html, body {
 }
 
 .email {
-  top: 14vh;
+  top: 14dvh;
 }
 
 .do_yo_want {
@@ -169,12 +169,12 @@ html, body {
   width: 69vw;
   height: 40px;
   left: 6.8vw;
-  top: 68vh;
+  top: 68dvh;
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4vh;
-  line-height: 2.5vh;
+  font-size: 1.4dvh;
+  line-height: 2.5dvh;
   text-align: left;
   color: #a2a2a2;
 }
@@ -182,11 +182,11 @@ html, body {
 .go_btn {
   position: absolute;
   width: 16vw;
-  height: 5vh;
+  height: 5dvh;
   background: transparent;
-  border: 0.1vh solid #ffffff;
-  border-radius: 1vh;
-  top: 68vh;
+  border: 0.1dvh solid #ffffff;
+  border-radius: 1dvh;
+  top: 68dvh;
   left: 76vw;
   color: #ffffff;
 }
@@ -195,7 +195,7 @@ html, body {
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.4vh;
+  font-size: 1.4dvh;
 }
 
 .hi_free {
@@ -203,7 +203,7 @@ html, body {
   left: 6.8vw;
   width: 80vw;
   display: none;
-  top: 68vh;
+  top: 68dvh;
 }
 
 textarea {
@@ -221,23 +221,23 @@ textarea {
   color: #a2a2a2;
   width: 80vw;
   font-family: Inter;
-  font-size: 2.5vh;
+  font-size: 2.5dvh;
   font-weight: 700;
 }
 
 .about_you {
   position: absolute;
   padding-left: 3.5vw;
-  padding-top: 1vh;
+  padding-top: 1dvh;
   width: 82vw;
-  height: 17vh;
-  font-size: 2vh;
+  height: 17dvh;
+  font-size: 2dvh;
   font-weight: 700;
-  top: 4.5vh;
+  top: 4.5dvh;
   color: #ffffff;
   background-color: transparent;
-  border: 0.1vh solid #3c3c3c;
-  border-radius: 1.7vh;
+  border: 0.1dvh solid #3c3c3c;
+  border-radius: 1.7dvh;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -245,20 +245,20 @@ textarea {
   position: absolute;
   width: 80vw;
   height: 40px;
-  top: 23.8vh;
+  top: 23.8dvh;
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.4vh;
-  line-height: 2.5vh;
+  font-size: 1.4dvh;
+  line-height: 2.5dvh;
   text-align: left;
   color: #a2a2a2;
 }
 
 .direction {
-  top: 30vh;
+  top: 30dvh;
 }
 
 .hint2 {
-  top: 35.7vh;
+  top: 35.7dvh;
 }
