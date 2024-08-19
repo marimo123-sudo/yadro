@@ -29,7 +29,7 @@ go_btn.addEventListener('click', function() {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    Telegram.WebApp.setHeaderColor('#000000');
+    Telegram.WebApp.setHeaderColor('#1a1a1a');
     Telegram.WebApp.setBackgroundColor("#1a1a1a");
     const heit = window.innerHeight;
     console.log(heit);
