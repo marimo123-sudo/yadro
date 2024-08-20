@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="telegramWebApp.js"></script>
+    <meta charset="UTF-8">
+    <title>Telegram Mini App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content, maximum-scale=1.0, minimum-scale=1.0" >
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="back" id="back">
+        <div class="first_square">
+            <div class="imgs" id="images">
+                <img src="pics/pics.png" alt="err" class="img">
+            </div>
+            <div class="for_eye" id="visibility">
+                <div class="ton_work_text">Ton work</div>
+                <div class="description">"Ton Work" is a new level freelance platform, find your skill or find a freelancer</div>
+            </div>
+            <div class="register" id="reg">
+                <div class="center">
+                    <div class="register_text">Create profile</div>
+                    <input class="name" placeholder="Name" maxlength="20"/>
+                    <input type="email" class="email" placeholder="Email" maxlength="20"/>
+                </div>
+                <div class="question" id="question">
+                    <div class="do_yo_want">Do you want to immediately fill out a freelancer profile?</div>
+                    <button class="go_btn" id="go">
+                        <div class="go_text">Go</div>
+                    </button>
+                </div>
+                <div class="hi_free" id="free">
+                    <div class="hi_free_text">Hello, freelancer!</div>
+                    <textarea type="text" class="about_you" placeholder="Texts..." maxlength="250"></textarea>
+                    <div class="hint1">
+                        **you can write about
+                         yourself and what programs you work in 
+                        and how much time you spend on work**
+                    </div>
+                    <input type="text" class="direction" placeholder="Your direction">
+                    <div class="hint2">
+                        **write your direction, example: designer**
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn" id="btn">
+            <div class="text">Continue</div>
+        </button>
+        
+    </div>
+    <script src="anti_size.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
