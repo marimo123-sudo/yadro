@@ -1,0 +1,38 @@
+.bottom_panel {
+    position: fixed;
+    bottom: calc(var(--viewport-height) * 0.0429184549356223);
+    width: 85vw;
+    height: calc(var(--viewport-height) * 0.073);
+    left: 5vw;
+    background-color: #202020;
+    border-radius: calc(var(--viewport-height) * 0.1);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 5;
+}
+
+.bottom_btn {
+    position: relative;
+    top: 12.5%;
+    height: 75%;
+    width: 23%;
+    border-radius: calc(var(--viewport-height) * 0.1);
+    background-color: transparent;
+    /* border: transparent; */
+}
+
+.bottom_btn.selected {
+    background-color: #363636;
+}
+
+.bottom_btn.bottom_btn.selected div {
+    color: #ffffff;
+}
+
+.bottom_text_btn {
+    position: absolute;
+    color: #7e7e7e;
+    right: 10%;
+    top: 30%;
+}
