@@ -1,12 +1,13 @@
 html, body {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 .back {
     position: relative;
     width: 100vw;
-    height: calc(var(--viewport-height) * 1.4163);
+    height: calc(var(--viewport-height) * 1.9163);
     background: #1a1a1a;
 }
 
@@ -174,4 +175,80 @@ html, body {
 
 .design_utilits.third {
     top: calc(var(--viewport-height) * 0.21);
+}
+
+.gray_line {
+    position: absolute;
+    width: 90vw;
+    left: 5vw;
+    background-color: #8d8d8d;
+    height: calc(var(--viewport-height) * 0.001);
+    top: calc(var(--viewport-height) * 1.2);
+}
+
+.freelance_btn {
+    position: absolute;
+    left: 5vw;
+    top: calc(var(--viewport-height) * 1.22);
+    border-radius: calc(var(--viewport-height) * 0.019);
+    border: calc(var(--viewport-height) * 0.001) solid #7e7e7e;
+    width: 90vw;
+    height: calc(var(--viewport-height) * 0.065);
+    background-color: transparent;
+}
+
+.freelance_text_btn {
+    color: #a2a2a2;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: calc(var(--viewport-height) * 0.0196051502145923);
+}
+
+.ok_right {
+    top: 33%;
+    position: absolute;
+    height: calc(var(--viewport-height) * 0.0259184549356223);
+    z-index: 1;
+    left: 74%;
+}
+
+.just_btns {
+    position: relative;
+    top: calc(var(--viewport-height) * 0.43);
+}
+
+.just_btn {
+    position: relative;
+    left: 5vw;
+    border: calc(var(--viewport-height) * 0.001) solid transparent;
+    width: 90vw;
+    height: calc(var(--viewport-height) * 0.065);
+    background-color: transparent;
+}
+
+.just_text_btn {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    color: #a2a2a2;
+    font-family: Inter;
+    font-weight: 300;
+    font-size: calc(var(--viewport-height) * 0.0196051502145923);
+}
+
+.just_gray_line_btn {
+    position: absolute;
+    width: 87vw;
+    bottom: 0%;
+    background-color: #8d8d8d;
+    height: calc(var(--viewport-height) * 0.001);
+    left: 0%;
+}
+
+.just_right {
+    top: 33%;
+    position: absolute;
+    height: calc(var(--viewport-height) * 0.0259184549356223);
+    z-index: 1;
+    left: 95%;
 }
